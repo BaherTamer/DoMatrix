@@ -21,15 +21,19 @@ final class DMTask {
     @Transient var priority: DMPriority {
         switch (self.isUrgent, self.isImportant) {
             
+        // Urgent & Important
         case (true, true):
             return .doFirst
             
+        // Not Urgent & Important
         case (false, true):
             return .schedule
             
+        // Urgent & Not Important
         case (true, false):
             return .delegate
             
+        // Not Urgent & Not Important
         case (false, false):
             return .dontDo
             
