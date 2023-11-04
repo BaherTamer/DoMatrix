@@ -15,5 +15,6 @@ struct SFSymbols {
     static let noTasks = "clipboard"
     static let taskIsCompleted = "checkmark.square.fill"
     static let taskIsNotCompleted = "square"
+    static let delete = "trash"
     
 }
