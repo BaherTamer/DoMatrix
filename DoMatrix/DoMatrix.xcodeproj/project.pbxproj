@@ -11,6 +11,8 @@
 		6EE478A72AF65D4500FC720E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE478A62AF65D4500FC720E /* ContentView.swift */; };
 		6EE478A92AF65D4700FC720E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE478A82AF65D4700FC720E /* Assets.xcassets */; };
 		6EE478AC2AF65D4700FC720E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE478AB2AF65D4700FC720E /* Preview Assets.xcassets */; };
+		6EE478B52AF6621B00FC720E /* DMTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE478B42AF6621B00FC720E /* DMTask.swift */; };
+		6EE478B72AF6628400FC720E /* DMPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE478B62AF6628400FC720E /* DMPriority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		6EE478A62AF65D4500FC720E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EE478A82AF65D4700FC720E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EE478AB2AF65D4700FC720E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EE478B42AF6621B00FC720E /* DMTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMTask.swift; sourceTree = "<group>"; };
+		6EE478B62AF6628400FC720E /* DMPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMPriority.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			children = (
 				6EE478A42AF65D4500FC720E /* DoMatrixApp.swift */,
 				6EE478A62AF65D4500FC720E /* ContentView.swift */,
+				6EE478B32AF6620000FC720E /* Models */,
 				6EE478B22AF65D7F00FC720E /* Resources */,
 				6EE478AA2AF65D4700FC720E /* Preview Content */,
 			);
@@ -73,6 +78,15 @@
 				6EE478A82AF65D4700FC720E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EE478B32AF6620000FC720E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EE478B42AF6621B00FC720E /* DMTask.swift */,
+				6EE478B62AF6628400FC720E /* DMPriority.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EE478A72AF65D4500FC720E /* ContentView.swift in Sources */,
+				6EE478B52AF6621B00FC720E /* DMTask.swift in Sources */,
+				6EE478B72AF6628400FC720E /* DMPriority.swift in Sources */,
 				6EE478A52AF65D4500FC720E /* DoMatrixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
