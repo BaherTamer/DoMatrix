@@ -15,7 +15,7 @@ struct DetailsToggleRow: View {
     let imageColor: Color
     
     var body: some View {
-        Toggle(isOn: $isOn, label: {
+        Toggle(isOn: $isOn) {
             HStack {
                 Image(systemName: systemImage)
                     .font(.title)
@@ -23,7 +23,7 @@ struct DetailsToggleRow: View {
                 
                 Text(title)
             }
-        })
+        }
     }
 }
 
