@@ -34,3 +34,22 @@ extension DMPriority {
     }
     
 }
+
+// MARK: Priority Colors
+extension DMPriority {
+    
+    var color: Color {
+        switch self {
+        case .doFirst:
+            .green
+        case .schedule:
+            .blue
+        case .delegate:
+            .orange
+        case .dontDo:
+            .red
+        }
+    }
+    
+}
+
