@@ -16,3 +16,21 @@ enum DMPriority: Int, CaseIterable {
     case dontDo
     
 }
+
+// MARK: Priority Titles
+extension DMPriority {
+    
+    var title: String {
+        switch self {
+        case .doFirst:
+            "Do First"
+        case .schedule:
+            "Schedule"
+        case .delegate:
+            "Delegate"
+        case .dontDo:
+            "Don't Do"
+        }
+    }
+    
+}
