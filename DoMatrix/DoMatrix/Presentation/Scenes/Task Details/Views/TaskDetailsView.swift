@@ -82,6 +82,7 @@ extension TaskDetailsView {
         
         withAnimation {
             modelContext.insert(task)
+            saveContext()
         }
         
         dismiss()
