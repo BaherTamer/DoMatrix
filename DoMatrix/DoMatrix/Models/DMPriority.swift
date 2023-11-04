@@ -53,3 +53,20 @@ extension DMPriority {
     
 }
 
+// MARK: Priority Task Filters
+extension DMPriority {
+    
+    var predicate: Predicate<DMTask> {
+        switch self {
+        case .doFirst:
+            #Predicate<DMTask> {$0.isImportant && $0.isUrgent}      // Important & Urgent
+        case .schedule:
+            #Predicate<DMTask> {$0.isImportant && !$0.isUrgent}     // Important & Not Urgent
+        case .delegate:
+            #Predicate<DMTask> {!$0.isImportant && $0.isUrgent}     // Not Important & Urgent
+        case .dontDo:
+            #Predicate<DMTask> {!$0.isImportant && !$0.isUrgent}    // Not Important & Not Urgent
+        }
+    }
+    
+}
