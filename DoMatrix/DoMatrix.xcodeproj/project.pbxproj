@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2C7D9A2AF7BA5300E71ACD /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2C7D992AF7BA5300E71ACD /* PreferenceKeys.swift */; };
 		6EE478A52AF65D4500FC720E /* DoMatrixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE478A42AF65D4500FC720E /* DoMatrixApp.swift */; };
 		6EE478A72AF65D4500FC720E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE478A62AF65D4500FC720E /* ContentView.swift */; };
 		6EE478A92AF65D4700FC720E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE478A82AF65D4700FC720E /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E2C7D992AF7BA5300E71ACD /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		6EE478A12AF65D4500FC720E /* DoMatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoMatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE478A42AF65D4500FC720E /* DoMatrixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoMatrixApp.swift; sourceTree = "<group>"; };
 		6EE478A62AF65D4500FC720E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE478C52AF6702F00FC720E /* SFSymbols.swift */,
+				6E2C7D992AF7BA5300E71ACD /* PreferenceKeys.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				6EE478D22AF68FED00FC720E /* PriorityHeader.swift in Sources */,
 				6EE478D62AF6909300FC720E /* TasksListView.swift in Sources */,
 				6EE478C92AF67B1E00FC720E /* Logger+Extensions.swift in Sources */,
+				6E2C7D9A2AF7BA5300E71ACD /* PreferenceKeys.swift in Sources */,
 				6EE478CC2AF68A7000FC720E /* AllTasksView.swift in Sources */,
 				6EE478C02AF66D7A00FC720E /* TaskDetailsView.swift in Sources */,
 				6EE478C32AF66F8200FC720E /* DetailsToggleRow.swift in Sources */,
