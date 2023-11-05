@@ -12,15 +12,28 @@ struct TasksListView: View {
     
     @Environment(\.modelContext) private var modelContext
     
-    @Query private var tasks: [DMTask]
+    @AppStorage(PreferenceKeys.showCompletedTasks) private var showCompletedTasks: Bool = false
     
-    private let priority: DMPriority
+    @Query private var originalTasks: [DMTask]
+    
+    private var tasks: [DMTask] {
+        
+        var filteredTasks: [DMTask] = []
+        
+        // Filter completed tasks from query or not
+        if showCompletedTasks {
+            filteredTasks = originalTasks
+        } else {
+            filteredTasks = originalTasks.filter({ !$0.isCompleted })
+        }
+        
+        // Return tasks sorted by non-completed tasks first
+        return filteredTasks.sorted(by: { !$0.isCompleted && $1.isCompleted })
+    }
     
     init(priority: DMPriority) {
-        self.priority = priority
-        
         // Return predicate based on priority to filter tasks based on priority
-        _tasks = Query(filter: priority.predicate)
+        _originalTasks = Query(filter: priority.predicate)
     }
     
     var body: some View {

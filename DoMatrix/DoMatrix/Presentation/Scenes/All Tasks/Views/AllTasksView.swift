@@ -18,40 +18,22 @@ struct AllTasksView: View {
             if !tasks.isEmpty {
                 PrioritiesListView()
             } else {
-                ContentUnavailableView(
-                    "No Tasks",
-                    systemImage: SFSymbols.noTasks,
-                    description: Text("It all starts with a single task. Add yours and make it count.")
-                )
+                ContentUnavailableView {
+                    Label("No Tasks", systemImage: SFSymbols.noTasks)
+                } description: {
+                    Text("It all starts with a single task.")
+                } actions: {
+                    Button("Add Task") {
+                        isShowingTaskDetailsView.toggle()
+                    }
+                }
             }
         }
         .navigationTitle("All Tasks")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomBar) {
-                Button {
-                    isShowingTaskDetailsView.toggle()
-                } label: {
-                    newTaskButtonLabel
-                }
-                
-                Spacer()
-            }
-        }
         .sheet(isPresented: $isShowingTaskDetailsView) {
             TaskDetailsView()
         }
-    }
-}
-
-// MARK: - Variables
-extension AllTasksView {
-    private var newTaskButtonLabel: some View {
-        HStack {
-            Image(systemName: SFSymbols.addNewTask)
-            Text("New Task")
-        }
-        .font(.headline)
     }
 }
 
