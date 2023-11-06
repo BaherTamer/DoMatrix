@@ -10,7 +10,7 @@ assignees: ''
 ## Feature Request
 
 ### User Story
-As a [user type], I want [an action] so that [a benefit or goal].
+- As a [user type], I want [an action] so that [a benefit or goal].
 
 ### Acceptance Criteria
 1. [Detailed acceptance criteria for the feature]
