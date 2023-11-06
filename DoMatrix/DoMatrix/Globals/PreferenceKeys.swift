@@ -9,4 +9,5 @@ import Foundation
 
 struct PreferenceKeys {
     static let showCompletedTasks = "showCompletedTasks"
+    static let selectedPriority = "selectedPriority"
 }
