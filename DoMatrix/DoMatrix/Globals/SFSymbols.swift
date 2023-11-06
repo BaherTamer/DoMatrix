@@ -23,5 +23,6 @@ struct SFSymbols {
     static let menu = "ellipsis.circle"
     static let showCompletedTasks = "eye"
     static let hideCompletedTasks = "eye.slash"
+    static let priorityFilter = "list.number"
     
 }
