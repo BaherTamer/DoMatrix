@@ -12,8 +12,7 @@ Welcome to DoMatrix, your go-to to-do list app, designed to help you prioritize 
 <br>
 
 ## 📝 Requirements
-- iOS 17.0+
-- Xcode 15+
+`iOS 17.0+` `Xcode 15+`
 
 <br>
 
