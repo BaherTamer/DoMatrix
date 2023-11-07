@@ -12,6 +12,7 @@ struct DoMatrixApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .fontDesign(.rounded)
                 .modelContainer(for: DMTask.self, isAutosaveEnabled: false)
         }
     }
