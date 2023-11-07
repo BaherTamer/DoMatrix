@@ -2,7 +2,9 @@
 
 <br>
 
-**🇵🇸 Don't forget to pray for Palestine and the Palestinians**
+### 🇵🇸 Don't forget to pray for Palestine and the Palestinians
+
+<br>
 
 # 💠 DoMatrix
 Welcome to DoMatrix, your go-to to-do list app, designed to help you prioritize and manage your tasks effectively using the [Eisenhower Matrix](https://www.eisenhower.me/eisenhower-matrix/) method. Built with **SwiftData** & **SwiftUI**.
