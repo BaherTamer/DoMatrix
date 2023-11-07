@@ -46,6 +46,7 @@ extension TaskDetailsView {
     private var taskInfoSection: some View {
         Section {
             TextField("Title", text: $task.title)
+                .textInputAutocapitalization(.never)
         }
     }
     
